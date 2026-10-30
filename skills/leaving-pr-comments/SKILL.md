@@ -23,6 +23,9 @@ If the harness does not expose a model name, use the harness name. Do not guess.
 Before posting, check the entire comment, including quoted text and
 attachments, for secrets and private details.
 
+To include screenshots, attach them with `gh pr comment --attach <file>`. See
+`file-pr` for the `gh` version it needs and what to do when it is too old.
+
 Keep the attribution inside the note and the actual reply outside it. The
 context line must start with the robot emoji. Do not add a horizontal rule,
 Setext underline, heading, signature footer, or a second attribution.

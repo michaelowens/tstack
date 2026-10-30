@@ -72,9 +72,13 @@ reproduction, a screenshot. Use the most direct proof the change allows:
 - Run the checks that the repo's CI runs (typecheck, lint, tests).
 - Add one focused test that fails without the fix, when the behavior has none
   and the repo has a test setup.
-- For UI and runtime behavior, run the app and look at the change. Green mocked
-  tests do not prove that the user experience works. Attach screenshots to the
-  PR when they help and you have a way to upload them.
+- For runtime behavior, run the app and look at the change. Green mocked
+  tests do not prove that the user experience works.
+- When the change touches UI, inspect it visually. Use the project's own skill
+  for running and testing its UI when it has one (for example
+  `portal-testing`), otherwise the `run` skill. Look at every changed screen
+  yourself, and capture screenshots: before and after for a visual bug. Attach
+  them to the PR as `file-pr` describes.
 
 When you cannot find a way to prove a change, you do not have full confidence.
 Ask the user.

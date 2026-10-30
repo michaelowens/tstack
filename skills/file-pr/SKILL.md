@@ -38,8 +38,31 @@ changes, for example `Created with <model> in <harness>.` Include subagent
 models that wrote part of the change. Use the model name the harness reports.
 If model identity is unavailable, name the harness without guessing a model.
 
+## Screenshots
+
+When the change touches UI, include screenshots of your visual inspection in
+the PR: before and after for a visual bug. Take them with the project's UI
+testing skill when it has one (for example `portal-testing`), otherwise the
+`run` skill.
+
+Attach them with `gh`: `--attach <file>` on `gh pr create`, `gh pr edit`, or
+`gh pr comment`. It is repeatable; `--attach './after.png#Alt text'` sets the
+alt text, and a local path already in the body, like `![after](./after.png)`,
+is replaced in place. Images may be up to 10 MB.
+
+`--attach` needs `gh` 2.99.0 or newer, so check `gh --version` first. If it is
+older:
+
+- Tell the user that attaching screenshots needs a newer `gh`, and how to
+  upgrade it (for example `brew upgrade gh`). Do not upgrade it yourself
+  without their consent.
+- Never let this block the PR. If they decline, cannot upgrade, or are not
+  watching the thread (as in `full-send`), file the PR without the images.
+  Say in the description that screenshots were taken but not attached, and
+  give them to the user in your reply instead.
+
 Before submission, check the title, description, quotes, and attachments for
-secrets and private details.
+secrets and private details. Screenshots count: look at what each one shows.
 
 Open a real PR rather than a draft so review bots run. If `gh pr create` fails
 because the GraphQL rate limit is used up, open it through REST with

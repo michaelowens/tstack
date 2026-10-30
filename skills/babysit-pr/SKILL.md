@@ -90,7 +90,8 @@ If a review bot leaves feedback you believe is not worth addressing, reply with
 a written reason and resolve the comment. Use the `leaving-pr-comments` skill
 for every comment posted on the user's behalf.
 
-Screenshots and videos help as well, when you have a way to upload them.
+When a fix changes UI, inspect it visually again and attach fresh
+screenshots, as `file-pr` describes.
 
 Keep the PR at the size the user's goal needs. Review loops tend to grow a
 PR one cheap-looking fix at a time. Fix real bugs in the intended case.
