@@ -31,13 +31,13 @@ Some skills call others. Install the ones they need too:
 Install universally:
 
 ```bash
-npx skills add t3dotgg/tstack
+npx skills add michaelowens/tstack
 ```
 
 or install manually:
 
 ```bash
-git clone https://github.com/t3dotgg/tstack
+git clone https://github.com/michaelowens/tstack
 cp -R tstack/skills/* ~/.claude/skills/   # Claude Code
 cp -R tstack/skills/* ~/.codex/skills/    # Codex
 ```
